@@ -4,37 +4,42 @@
 		<title>Ohmyfood</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="Le meilleur site de commande de repas gastronomiques en ligne, de New-York à Paris">
-		<link rel="stylesheet" href="ohmyfood.css"/>
+		<link rel="stylesheet" href="style.css"/>
 		<script src="https://kit.fontawesome.com/9644e0c751.js" crossorigin="anonymous"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
 		<header>
-			<img src="images/logo/ohmyfood.png" alt="logo du site OhMyFood bannière">
-			<div class="header-localization">	
+			<img src="images/logo/ohmyfood.png" id="header_logo" alt="logo du site OhMyFood bannière">
+			<div class="header_localization">	
 				<i class="fas fa-map-marker-alt"></i>
 				<p>Paris, Belleville</p>
 			</div>
-			<div class="header_info">
-				<p>Réservez le menu qui vous convient</p>
-				<p>Découvez des restaurants d'exception, séléctionnés par nos soins</p>
+			<div class="header_top_info">
+				<div class="header_bot_info">
+					<p>Réservez le menu qui vous convient</p>
+					<p>Découvez des restaurants d'exception, séléctionnés par nos soins</p>
+				</div>
+				<p id="header_button">Explorer nos restaurants</p>
 			</div>
-			<p id="header_button">Explorer nos restaurants</p>
 		</header>
 
 		<nav>
 			<p>Fonctionnement</p>
 			<div class="item">
-				<i class="fas fa-mobile-alt"></i>
+				<p class="number">1</p>
+				<i class="fas fa-mobile-alt item_ico"></i>
 				<p>Choississez un restaurant</p>
 			</div>
 			<div class="item">
-				<i class="fas fa-list-ul"></i>
+				<p class="number">2</p>
+				<i class="fas fa-list-ul item_ico"></i>
 				<p>Composez votre menu</p>
 			</div>
 			<div class="item">
-				<i class="fas fa-store"></i>	
+				<p class="number">3</p>
+				<i class="fas fa-store item_ico"></i>	
 				<p>Dégustez au restaurant</p>
 			</div>	
 		</nav>
@@ -42,38 +47,38 @@
 		<section>
 			<p>Restaurant</p>
 			<figure class="restaurant item_nouveau">
-				<img src="images/restaurants/gout" alt="photo du restaurant La palette du goût">
 				<p>Nouveau</p>
+				<img src="images/restaurants/gout.jpg" alt="photo du restaurant La palette du goût">
 				<figcaption>
-					<h1>La palette du goût</h1>
+					<h2>La palette du goût</h2>
 					<p>Ménilmontant</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
 			</figure>
 
 			<figure class="restaurant item_nouveau">
-				<img src="images/restaurants/enchantee" alt="photo du restaurant La note enchantée">
 				<p>Nouveau</p>
+				<img src="images/restaurants/enchantee.jpg" alt="photo du restaurant La note enchantée">
 				<figcaption>
-					<h1>La note enchantée</h1>
+					<h2>La note enchantée</h2>
 					<p>Charonne</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
 			</figure>
 
 			<figure class="restaurant">
-				<img src="images/restaurants/french" alt="photo du restaurant A la française">
+				<img src="images/restaurants/french.jpg" alt="photo du restaurant A la française">
 				<figcaption>
-					<h1>A la française</h1>
+					<h2>A la française</h2>
 					<p>Cité Rouge</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
 			</figure>
 
 			<figure class="restaurant">
-				<img src="images/restaurants/sens" alt="photo du restaurant Le délice des sens">
+				<img src="images/restaurants/sens.jpg" alt="photo du restaurant Le délice des sens">
 				<figcaption>
-					<h1>Le délice des sens</h1>
+					<h2>Le délice des sens</h2>
 					<p>Folie-Méricourt</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
@@ -81,12 +86,12 @@
 		</section>
 
 		<footer>
-			<img src="images/logo/ohmyfood.png" alt="logo du site OhMyFood bas de page">
-			<div class="footer">
+			<img src="images/logo/ohmyfood.png" id="footer_logo" alt="logo du site OhMyFood bas de page">
+			<div class="footer_ico">
 				<i class="fas fa-utensils"></i>
 				<p>Proposer un restaurant</p>
 			</div>
-			<div class="footer">
+			<div class="footer_ico">
 				<i class="fas fa-hands-helping"></i>
 				<p>Devenir partenaire</p>
 			</div>
