@@ -11,56 +11,56 @@
 
 	<body>
 		<header>
-			<img src="images/logo/ohmyfood.png" id="header_logo" alt="logo du site OhMyFood bannière">
+			<img src="images/logo/ohmyfood.png" class="header_logo" alt="logo du site OhMyFood bannière">
 			<div class="header_localization">	
 				<i class="fas fa-map-marker-alt"></i>
 				<p>Paris, Belleville</p>
 			</div>
 			<div class="header_top_info">
 				<div class="header_bot_info">
-					<p>Réservez le menu qui vous convient</p>
-					<p>Découvez des restaurants d'exception, séléctionnés par nos soins</p>
+					<p id="header_top_title">Réservez le menu qui vous convient</p>
+					<p id="header_bot_title">Découvez des restaurants d'exception, séléctionnés par nos soins</p>
 				</div>
 				<p id="header_button">Explorer nos restaurants</p>
 			</div>
 		</header>
 
 		<nav>
-			<p>Fonctionnement</p>
+			<p id="nav_title">Fonctionnement</p>
 			<div class="item">
 				<p class="number">1</p>
-				<i class="fas fa-mobile-alt item_ico"></i>
-				<p>Choississez un restaurant</p>
+				<i class="fas fa-mobile-alt item_ico1"></i>
+				<p class="choice">Choisissez un restaurant</p>
 			</div>
 			<div class="item">
 				<p class="number">2</p>
-				<i class="fas fa-list-ul item_ico"></i>
-				<p>Composez votre menu</p>
+				<i class="fas fa-list-ul item_ico2"></i>
+				<p class="choice">Composez votre menu</p>
 			</div>
 			<div class="item">
 				<p class="number">3</p>
-				<i class="fas fa-store item_ico"></i>	
-				<p>Dégustez au restaurant</p>
+				<i class="fas fa-store item_ico3"></i>	
+				<p class="choice">Dégustez au restaurant</p>
 			</div>	
 		</nav>
 
 		<section>
-			<p>Restaurant</p>
-			<figure class="restaurant item_nouveau">
-				<p>Nouveau</p>
+			<p id="section_title">Restaurants</p>
+			<figure class="restaurant restaurant_margin">
+				<p class="item_new">Nouveau</p>
 				<img src="images/restaurants/gout.jpg" alt="photo du restaurant La palette du goût">
 				<figcaption>
-					<h2>La palette du goût</h2>
+					<h1>La palette du goût</h1>
 					<p>Ménilmontant</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
 			</figure>
 
-			<figure class="restaurant item_nouveau">
-				<p>Nouveau</p>
+			<figure class="restaurant restaurant_margin">
+				<p class="item_new">Nouveau</p>
 				<img src="images/restaurants/enchantee.jpg" alt="photo du restaurant La note enchantée">
 				<figcaption>
-					<h2>La note enchantée</h2>
+					<h1>La note enchantée</h1>
 					<p>Charonne</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
@@ -69,7 +69,7 @@
 			<figure class="restaurant">
 				<img src="images/restaurants/french.jpg" alt="photo du restaurant A la française">
 				<figcaption>
-					<h2>A la française</h2>
+					<h1>A la française</h1>
 					<p>Cité Rouge</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
@@ -78,7 +78,7 @@
 			<figure class="restaurant">
 				<img src="images/restaurants/sens.jpg" alt="photo du restaurant Le délice des sens">
 				<figcaption>
-					<h2>Le délice des sens</h2>
+					<h1>Le délice des sens</h1>
 					<p>Folie-Méricourt</p>
 					<i class="far fa-heart"></i>
 				</figcaption>
@@ -87,16 +87,18 @@
 
 		<footer>
 			<img src="images/logo/ohmyfood.png" id="footer_logo" alt="logo du site OhMyFood bas de page">
-			<div class="footer_ico">
-				<i class="fas fa-utensils"></i>
-				<p>Proposer un restaurant</p>
+			<div class="footer_all">
+				<div class="footer_ico">
+					<i class="fas fa-utensils"></i>
+					<p>Proposer un restaurant</p>
+				</div>
+				<div class="footer_ico">
+					<i class="fas fa-hands-helping"></i>
+					<p>Devenir partenaire</p>
+				</div>
+				<p>Mention légales</p>
+				<p>Contact</p>
 			</div>
-			<div class="footer_ico">
-				<i class="fas fa-hands-helping"></i>
-				<p>Devenir partenaire</p>
-			</div>
-			<p>Mention légales</p>
-			<p>Contact</p>
 		</footer>
 	</body>
 </html>

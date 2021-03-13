@@ -1,0 +1,50 @@
+.header_logo{
+    width: 160px;
+    margin: 10px 70px;
+}
+
+.header_img{
+    width: 100%;
+    height: auto;
+}
+
+.header_localization{
+    display: flex;
+    align-items: baseline;
+    background: rgb(224, 224, 224);
+    border-top: solid 3px rgb(209, 209, 209);
+    padding-left: 80px;
+        .fa-map-marker-alt{
+            font-size: 15px;
+            margin-right: 18px;
+        } 
+        p{
+            font-size: 14px;
+            font-weight: 600;
+        }
+}
+
+.header_top_info{
+    background: rgb(235, 235, 235);
+    padding-bottom: 40px;
+}
+
+.header_bot_info p{
+    margin: 0;
+}
+
+#header_top_title{
+    font-size: 20px;
+    font-weight: 700;
+    width: 64%;
+    padding: 35px 0 15px 55px;
+    text-align: center;
+}
+
+#header_bot_title{
+    color: rgb(119, 119, 119);
+    font-weight: 500;
+    width: 92%;
+    padding: 0 0 14px 20px;
+    text-align: center;
+}

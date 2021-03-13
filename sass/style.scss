@@ -1,3 +1,11 @@
+@use './components/buttons.scss';
+@use './layout/footer.scss';
+@use './layout/header.scss';
+@use './layout/navigation.scss';
+@use './utils/mixins.scss';
+@use './utils/variables.scss';
+
+
 @font-face{
     font-family: "Roboto-Regular";
     src: url("/fonts/Roboto-Regular.ttf") format("truetype");
@@ -16,106 +24,156 @@
     font-weight: 400;
 }
 
-#header_logo{
-    width: 160px;
-    margin: 10px 70px;
-}
-
-.header_localization{
-    display: flex;
-    align-items: baseline;
-    background: rgb(224, 224, 224);
-    border-top: solid 2px rgb(209, 209, 209);
-    padding-left: 80px;
-        .fa-map-marker-alt{
-            font-size: 15px;
-            margin-right: 18px;
-        }
-
-        p{
-            font-size: 14px;
-            font-weight: 600;
-        }
-}
-
-.header_top_info{
-    background: rgb(235, 235, 235);
-}
-
-.header_bot_info p{
-    margin: 0;
-}
-
-#header_button{
-    display: flex;
-    justify-content: center;
-    background: #9356DC;
-    color: white;
-    border-radius: 50px;
-    width: 60%;
-    padding: 12px;
-}
-
-.item{
-    display: flex;
-    align-items: baseline;
-    background: rgb(235, 235, 235);
-    &:hover{
-        background: #dca7ec;
-        opacity: 50%;
-    }
-    border-radius: 20px;
-}
-
-.item_ico{
-    color: grey; 
-}
-
-section{
-    background: rgb(235, 235, 235);
-}
-
-section img{
-    width: 280px;
-    height: 150px;
-}
-
-figure {
-    width: 280px;
-    background: white;
-}
-
-footer{
-    background: rgb(39, 39, 39);
-    color: white;
-}
-
-#footer_logo{
-    width: 100px;
-}
-
-.footer_ico{
-    display: flex;
-    align-items: baseline;
+body{
+    border-right: solid 1px rgb(172, 172, 172);
 }
 
 h1{
-    font-family: "Shrikhand-Regular";
-    font-weight: 500;
-    font-size: 28px;
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    font-weight: 600;
+    margin: -4px 0 0 0;
+    padding: 15px 0 0 10px;
 }
 
 h2{
+    font-family: "Shrikhand-Regular";
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 0 0;
+}
+
+h3{
     font-family: "Roboto-Regular";
-    font-size: 20px;
+    font-size: 15px;
+    margin: 0 0 0 0;
+    padding: 15px 0 0 10px;
 }
 
 p{
     font-family: "Roboto-Regular";
-    font-size: 16px;
+    font-size: 15px;
 }
 
-.container_title{
-    font-size: 18px;
+section{
+    background: rgb(235, 235, 235);
+    margin-top: 54px;
+    padding: 25px 0 36px 0;
 }
 
+#section_title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 22px 12px;
+}
+
+section figure{
+    width: 280px;
+    margin: 0;
+    padding-left: 12px;
+}
+
+section .restaurant{
+    margin-bottom: 20px;
+}
+
+section .restaurant_margin{
+    margin-top: -23px;
+}
+
+section .item_new{
+    position: relative;
+    left: 201px;
+    top: 37px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #99E2D0;
+    color: #16a072;
+    width: 18%;
+    margin: 0;
+    padding: 5px 8px 5px 10px;
+}
+
+section img{
+    background: white;
+    width: 280px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+section figcaption{
+    background: white;
+    width: 100%;
+    height: 72px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+section figcaption p{
+    font-size: 14px;
+    margin: 0 0 0 0;
+    padding: 5px 0 0 10px;
+}
+
+section figcaption .fa-heart{
+    position: relative;
+    left: 230px;
+    bottom: 35px;
+    font-size: 20px;
+    opacity: 60%;
+}
+
+main{
+    background: rgb(235, 235, 235);
+    padding-bottom: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+main .restaurant_name{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px 0 0 15px;
+}
+
+main .restaurant_name .fa-heart{
+    font-size: 22px;
+    padding: 0 34px 0 0;
+}
+
+main .container_title{
+    font-size: 14px;
+    padding: 20px 0 3px 15px;
+    border-bottom: solid 3px #99E2D0;
+    width: 10%;
+}
+
+main .recipe{
+    background-color: white;
+    border-radius: 20px;
+    width: 92%;
+    margin: 15px 0 0 12px;
+}
+
+main .ingre_prize{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 0 15px 0;
+}
+
+main .ingredients{
+    font-size: 13px;
+    margin: 0 0 0 0;
+    padding: 5px 0 0 10px;
+
+}
+
+main .prize{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+    padding: 0 15px 0 0;
+}

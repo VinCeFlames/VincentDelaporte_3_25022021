@@ -1,3 +1,166 @@
+#header_button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 50px;
+  width: 54%;
+  padding: 12px 16px 12px 16px;
+  margin-left: 60px;
+}
+
+.order_button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 50px;
+  width: 40%;
+  padding: 12px 16px 12px 50px;
+  margin: 50px 0 60px 60px;
+}
+
+footer {
+  background: #272727;
+  color: white;
+  width: 100%;
+  height: 170px;
+  width: 100%;
+}
+
+.footer_all {
+  padding-left: 20px;
+}
+
+#footer_logo {
+  width: 100px;
+  filter: invert(100%);
+  margin: 18px 0 18px 20px;
+}
+
+.footer_ico {
+  display: flex;
+  align-items: baseline;
+}
+
+footer .fa-utensils {
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+footer .fa-hands-helping {
+  font-size: 8px;
+  margin-right: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.header_logo {
+  width: 160px;
+  margin: 10px 70px;
+}
+
+.header_img {
+  width: 100%;
+  height: auto;
+}
+
+.header_localization {
+  display: flex;
+  align-items: baseline;
+  background: #e0e0e0;
+  border-top: solid 3px #d1d1d1;
+  padding-left: 80px;
+}
+.header_localization .fa-map-marker-alt {
+  font-size: 15px;
+  margin-right: 18px;
+}
+.header_localization p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header_top_info {
+  background: #ebebeb;
+  padding-bottom: 40px;
+}
+
+.header_bot_info p {
+  margin: 0;
+}
+
+#header_top_title {
+  font-size: 20px;
+  font-weight: 700;
+  width: 64%;
+  padding: 35px 0 15px 55px;
+  text-align: center;
+}
+
+#header_bot_title {
+  color: #777777;
+  font-weight: 500;
+  width: 92%;
+  padding: 0 0 14px 20px;
+  text-align: center;
+}
+
+#nav_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 35px 0 20px 12px;
+}
+
+nav .item {
+  display: flex;
+  align-items: baseline;
+  background: #ebebeb;
+  border-radius: 20px;
+  margin: 0 0 15px 18px;
+  padding: 6px 0 4px 0px;
+  width: 90%;
+}
+nav .item:hover {
+  background: #dca7ec;
+  opacity: 50%;
+}
+
+nav .number {
+  position: relative;
+  right: 12px;
+  background: #9356DC;
+  color: white;
+  font-size: 13px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  padding: 5px 2px 5px 10px;
+}
+
+nav .item_ico1 {
+  font-size: 18px;
+  color: grey;
+  margin: 0 22px 0 10px;
+}
+
+nav .item_ico2 {
+  font-size: 16px;
+  color: grey;
+  margin: 0 20px 0 8px;
+}
+
+nav .item_ico3 {
+  font-size: 14px;
+  color: grey;
+  margin: 0 20px 0 8px;
+}
+
+nav .choice {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 @font-face {
   font-family: "Roboto-Regular";
   src: url("/fonts/Roboto-Regular.ttf") format("truetype");
@@ -13,106 +176,157 @@
   src: url("/fonts/Shrikhand-Regular.ttf") format("truetype");
   font-weight: 400;
 }
-#header_logo {
-  width: 160px;
-  margin: 10px 70px;
-}
-
-.header_localization {
-  display: flex;
-  align-items: baseline;
-  background: #e0e0e0;
-  border-top: solid 2px #d1d1d1;
-  padding-left: 80px;
-}
-.header_localization .fa-map-marker-alt {
-  font-size: 15px;
-  margin-right: 18px;
-}
-.header_localization p {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.header_top_info {
-  background: #ebebeb;
-}
-
-.header_bot_info p {
-  margin: 0;
-}
-
-#header_button {
-  display: flex;
-  justify-content: center;
-  background: #9356DC;
-  color: white;
-  border-radius: 50px;
-  width: 60%;
-  padding: 12px;
-}
-
-.item {
-  display: flex;
-  align-items: baseline;
-  background: #ebebeb;
-  border-radius: 20px;
-}
-.item:hover {
-  background: #dca7ec;
-  opacity: 50%;
-}
-
-.item_ico {
-  color: grey;
-}
-
-section {
-  background: #ebebeb;
-}
-
-section img {
-  width: 280px;
-  height: 150px;
-}
-
-figure {
-  width: 280px;
-  background: white;
-}
-
-footer {
-  background: #272727;
-  color: white;
-}
-
-#footer_logo {
-  width: 100px;
-}
-
-.footer_ico {
-  display: flex;
-  align-items: baseline;
+body {
+  border-right: solid 1px #acacac;
 }
 
 h1 {
-  font-family: "Shrikhand-Regular";
-  font-weight: 500;
-  font-size: 28px;
+  font-family: "Roboto-Regular";
+  font-size: 15px;
+  font-weight: 600;
+  margin: -4px 0 0 0;
+  padding: 15px 0 0 10px;
 }
 
 h2 {
+  font-family: "Shrikhand-Regular";
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 0 0 0;
+}
+
+h3 {
   font-family: "Roboto-Regular";
-  font-size: 20px;
+  font-size: 15px;
+  margin: 0 0 0 0;
+  padding: 15px 0 0 10px;
 }
 
 p {
   font-family: "Roboto-Regular";
-  font-size: 16px;
+  font-size: 15px;
 }
 
-.container_title {
-  font-size: 18px;
+section {
+  background: #ebebeb;
+  margin-top: 54px;
+  padding: 25px 0 36px 0;
+}
+
+#section_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 22px 12px;
+}
+
+section figure {
+  width: 280px;
+  margin: 0;
+  padding-left: 12px;
+}
+
+section .restaurant {
+  margin-bottom: 20px;
+}
+
+section .restaurant_margin {
+  margin-top: -23px;
+}
+
+section .item_new {
+  position: relative;
+  left: 201px;
+  top: 37px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #99E2D0;
+  color: #16a072;
+  width: 18%;
+  margin: 0;
+  padding: 5px 8px 5px 10px;
+}
+
+section img {
+  background: white;
+  width: 280px;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+section figcaption {
+  background: white;
+  width: 100%;
+  height: 72px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+section figcaption p {
+  font-size: 14px;
+  margin: 0 0 0 0;
+  padding: 5px 0 0 10px;
+}
+
+section figcaption .fa-heart {
+  position: relative;
+  left: 230px;
+  bottom: 35px;
+  font-size: 20px;
+  opacity: 60%;
+}
+
+main {
+  background: #ebebeb;
+  padding-bottom: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+main .restaurant_name {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 20px 0 0 15px;
+}
+
+main .restaurant_name .fa-heart {
+  font-size: 22px;
+  padding: 0 34px 0 0;
+}
+
+main .container_title {
+  font-size: 14px;
+  padding: 20px 0 3px 15px;
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+}
+
+main .recipe {
+  background-color: white;
+  border-radius: 20px;
+  width: 92%;
+  margin: 15px 0 0 12px;
+}
+
+main .ingre_prize {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 0 15px 0;
+}
+
+main .ingredients {
+  font-size: 13px;
+  margin: 0 0 0 0;
+  padding: 5px 0 0 10px;
+}
+
+main .prize {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 0 0;
+  padding: 0 15px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
