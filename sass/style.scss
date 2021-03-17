@@ -1,9 +1,9 @@
-@use './components/buttons.scss';
-@use './layout/footer.scss';
-@use './layout/header.scss';
-@use './layout/navigation.scss';
-@use './utils/mixins.scss';
-@use './utils/variables.scss';
+@import './components/buttons.scss';
+@import './layout/footer.scss';
+@import './layout/header.scss';
+@import './layout/navigation.scss';
+@import './utils/mixins.scss';
+@import './utils/variables.scss';
 
 
 @font-face{
@@ -47,7 +47,7 @@ h3{
     font-family: "Roboto-Regular";
     font-size: 15px;
     margin: 0 0 0 0;
-    padding: 15px 0 0 10px;
+    padding: 12px 0 0 7px;
 }
 
 p{
@@ -56,7 +56,7 @@ p{
 }
 
 section{
-    background: rgb(235, 235, 235);
+    background: rgb(240, 240, 240);
     margin-top: 54px;
     padding: 25px 0 36px 0;
 }
@@ -65,6 +65,11 @@ section{
     font-size: 20px;
     font-weight: 600;
     margin: 20px 0 22px 12px;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
 }
 
 section figure{
@@ -104,6 +109,7 @@ section img{
 
 section figcaption{
     background: white;
+    box-shadow:  3px 3px 20px 1px rgb(214, 214, 214);
     width: 100%;
     height: 72px;
     border-bottom-left-radius: 15px;
@@ -125,7 +131,8 @@ section figcaption .fa-heart{
 }
 
 main{
-    background: rgb(235, 235, 235);
+    background: rgb(240, 240, 240);
+    margin: -46px 0 0 0;
     padding-bottom: 20px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -145,29 +152,35 @@ main .restaurant_name .fa-heart{
 
 main .container_title{
     font-size: 14px;
+    margin: 14px 0 0 0;
     padding: 20px 0 3px 15px;
-    border-bottom: solid 3px #99E2D0;
-    width: 10%;
+}
+
+hr{
+    border: #99E2D0 solid 2px;
+    width: 10px;
+    margin: 4px 0 0 15px;
+    padding: 0 10px 0 10px;
 }
 
 main .recipe{
     background-color: white;
     border-radius: 20px;
-    width: 92%;
-    margin: 15px 0 0 12px;
+    width: 96%;
+    margin: 15px 0 0 6px;
 }
 
 main .ingre_prize{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 0 15px 0;
+    padding: 0 0 12px 0;
 }
 
 main .ingredients{
     font-size: 13px;
     margin: 0 0 0 0;
-    padding: 5px 0 0 10px;
+    padding: 5px 0 0 7px;
 
 }
 

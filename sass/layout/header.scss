@@ -1,17 +1,59 @@
-.header_logo{
+header .back_logo{
+    display: flex;
+}
+
+header .fa-arrow-left{
+    font-size: 20px;
+    margin: 15px 0 0 22px;
+}
+
+.header_logo1{
     width: 160px;
     margin: 10px 70px;
 }
 
-.header_img{
-    width: 100%;
-    height: auto;
+.header_logo2{
+    width: 160px;
+    margin: 10px 36px;
 }
+
+.header_img_french2{
+    background-image: url("images/restaurants/french2.jpg");
+    background-repeat: no-repeat;
+    background-size: 303px;
+    width: 100%;
+    height: 222px;
+}
+
+.header_img_gout2{
+    background-image: url("images/restaurants/gout2.jpg");
+    background-repeat: no-repeat;
+    background-size: 303px;
+    width: 100%;
+    height: 222px;
+}
+
+.header_img_enchantee2{
+    background-image: url("images/restaurants/enchantee2.jpg");
+    background-repeat: no-repeat;
+    background-size: 303px;
+    width: 100%;
+    height: 222px;
+}
+
+.header_img_sens2{
+    background-image: url("images/restaurants/sens2.jpg");
+    background-repeat: no-repeat;
+    background-size: 303px;
+    width: 100%;
+    height: 222px;
+}
+
 
 .header_localization{
     display: flex;
     align-items: baseline;
-    background: rgb(224, 224, 224);
+    background: rgb(230, 230, 230);
     border-top: solid 3px rgb(209, 209, 209);
     padding-left: 80px;
         .fa-map-marker-alt{
@@ -25,7 +67,7 @@
 }
 
 .header_top_info{
-    background: rgb(235, 235, 235);
+    background: rgb(240, 240, 240);
     padding-bottom: 40px;
 }
 

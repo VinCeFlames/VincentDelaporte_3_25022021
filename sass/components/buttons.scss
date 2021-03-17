@@ -1,17 +1,27 @@
 #header_button{
-    background: linear-gradient(#FF79DA, #9356DC );
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow:  5px 5px 10px 1px rgb(161, 161, 161);
     color: white;
     border-radius: 50px;
     width: 54%;
     padding: 12px 16px 12px 16px;
     margin-left: 60px;
+        &:hover{
+            background: linear-gradient( #fd8bdd 20%, #9667cf 100%); 
+            box-shadow:  10px 10px 10px 1px rgb(161, 161, 161);
+        }
 }
 
 .order_button{
-    background: linear-gradient(#FF79DA, #9356DC );
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow:  5px 5px 10px 1px rgb(161, 161, 161);
     color: white;
     border-radius: 50px;
     width: 40%;
     padding: 12px 16px 12px 50px;
     margin: 50px 0 60px 60px;
+    &:hover{
+        background: linear-gradient( #fd8bdd 20%, #9667cf 100%); 
+        box-shadow:  10px 10px 10px 1px rgb(161, 161, 161);
+    }
 }

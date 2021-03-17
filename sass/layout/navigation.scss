@@ -7,11 +7,12 @@
 nav .item{
     display: flex;
     align-items: baseline;
-    background: rgb(235, 235, 235);
+    background: rgb(243, 243, 243);
     border-radius: 20px;
-    margin: 0 0 15px 18px;
+    margin: 0 0 25px 18px;
     padding: 6px 0 4px 0px;
     width: 90%;
+    box-shadow: 3px 3px 10px 1px rgb(212, 212, 212);
     &:hover{
         background: #dca7ec;
         opacity: 50%;

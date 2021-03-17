@@ -1,23 +1,33 @@
 #header_button {
   background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 5px 5px 10px 1px #a1a1a1;
   color: white;
   border-radius: 50px;
   width: 54%;
   padding: 12px 16px 12px 16px;
   margin-left: 60px;
 }
+#header_button:hover {
+  background: linear-gradient(#fd8bdd 20%, #9667cf 100%);
+  box-shadow: 10px 10px 10px 1px #a1a1a1;
+}
 
 .order_button {
   background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 5px 5px 10px 1px #a1a1a1;
   color: white;
   border-radius: 50px;
   width: 40%;
   padding: 12px 16px 12px 50px;
   margin: 50px 0 60px 60px;
 }
+.order_button:hover {
+  background: linear-gradient(#fd8bdd 20%, #9667cf 100%);
+  box-shadow: 10px 10px 10px 1px #a1a1a1;
+}
 
 footer {
-  background: #272727;
+  background: #333333;
   color: white;
   width: 100%;
   height: 170px;
@@ -55,20 +65,66 @@ footer p {
   margin: 4px 0;
 }
 
-.header_logo {
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+header .back_logo {
+  display: flex;
+}
+
+header .fa-arrow-left {
+  font-size: 20px;
+  margin: 15px 0 0 22px;
+}
+
+.header_logo1 {
   width: 160px;
   margin: 10px 70px;
 }
 
-.header_img {
+.header_logo2 {
+  width: 160px;
+  margin: 10px 36px;
+}
+
+.header_img_french2 {
+  background-image: url("images/restaurants/french2.jpg");
+  background-repeat: no-repeat;
+  background-size: 303px;
   width: 100%;
-  height: auto;
+  height: 222px;
+}
+
+.header_img_gout2 {
+  background-image: url("images/restaurants/gout2.jpg");
+  background-repeat: no-repeat;
+  background-size: 303px;
+  width: 100%;
+  height: 222px;
+}
+
+.header_img_enchantee2 {
+  background-image: url("images/restaurants/enchantee2.jpg");
+  background-repeat: no-repeat;
+  background-size: 303px;
+  width: 100%;
+  height: 222px;
+}
+
+.header_img_sens2 {
+  background-image: url("images/restaurants/sens2.jpg");
+  background-repeat: no-repeat;
+  background-size: 303px;
+  width: 100%;
+  height: 222px;
 }
 
 .header_localization {
   display: flex;
   align-items: baseline;
-  background: #e0e0e0;
+  background: #e6e6e6;
   border-top: solid 3px #d1d1d1;
   padding-left: 80px;
 }
@@ -82,7 +138,7 @@ footer p {
 }
 
 .header_top_info {
-  background: #ebebeb;
+  background: #f0f0f0;
   padding-bottom: 40px;
 }
 
@@ -115,11 +171,12 @@ footer p {
 nav .item {
   display: flex;
   align-items: baseline;
-  background: #ebebeb;
+  background: #f3f3f3;
   border-radius: 20px;
-  margin: 0 0 15px 18px;
+  margin: 0 0 25px 18px;
   padding: 6px 0 4px 0px;
   width: 90%;
+  box-shadow: 3px 3px 10px 1px #d4d4d4;
 }
 nav .item:hover {
   background: #dca7ec;
@@ -199,7 +256,7 @@ h3 {
   font-family: "Roboto-Regular";
   font-size: 15px;
   margin: 0 0 0 0;
-  padding: 15px 0 0 10px;
+  padding: 12px 0 0 7px;
 }
 
 p {
@@ -208,7 +265,7 @@ p {
 }
 
 section {
-  background: #ebebeb;
+  background: #f0f0f0;
   margin-top: 54px;
   padding: 25px 0 36px 0;
 }
@@ -217,6 +274,11 @@ section {
   font-size: 20px;
   font-weight: 600;
   margin: 20px 0 22px 12px;
+}
+
+section a {
+  text-decoration: none;
+  color: black;
 }
 
 section figure {
@@ -256,6 +318,7 @@ section img {
 
 section figcaption {
   background: white;
+  box-shadow: 3px 3px 20px 1px #d6d6d6;
   width: 100%;
   height: 72px;
   border-bottom-left-radius: 15px;
@@ -277,7 +340,8 @@ section figcaption .fa-heart {
 }
 
 main {
-  background: #ebebeb;
+  background: #f0f0f0;
+  margin: -46px 0 0 0;
   padding-bottom: 20px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -297,29 +361,35 @@ main .restaurant_name .fa-heart {
 
 main .container_title {
   font-size: 14px;
+  margin: 14px 0 0 0;
   padding: 20px 0 3px 15px;
-  border-bottom: solid 3px #99E2D0;
-  width: 10%;
+}
+
+hr {
+  border: #99E2D0 solid 2px;
+  width: 10px;
+  margin: 4px 0 0 15px;
+  padding: 0 10px 0 10px;
 }
 
 main .recipe {
   background-color: white;
   border-radius: 20px;
-  width: 92%;
-  margin: 15px 0 0 12px;
+  width: 96%;
+  margin: 15px 0 0 6px;
 }
 
 main .ingre_prize {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 0 0 15px 0;
+  padding: 0 0 12px 0;
 }
 
 main .ingredients {
   font-size: 13px;
   margin: 0 0 0 0;
-  padding: 5px 0 0 10px;
+  padding: 5px 0 0 7px;
 }
 
 main .prize {
