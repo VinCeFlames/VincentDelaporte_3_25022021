@@ -1,5 +1,7 @@
+/* Explorer nos restaurants */
+
 #header_button{
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient($secondary, $primary);
     box-shadow:  5px 5px 10px 1px rgb(161, 161, 161);
     color: white;
     border-radius: 50px;
@@ -12,8 +14,10 @@
         }
 }
 
+/* Commander */
+
 .order_button{
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient($secondary, $primary);
     box-shadow:  5px 5px 10px 1px rgb(161, 161, 161);
     color: white;
     border-radius: 50px;
