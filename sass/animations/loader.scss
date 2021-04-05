@@ -1,14 +1,30 @@
 /* Loader Spinner */
 
-.loader{
-    font-family: "Shrikhand-Regular";
-    position: absolute;
-    width: 100%;
-    height: 2000px;
-    background: linear-gradient($secondary, $primary);
+.spinner_loader{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: -8px 0 0 -8px;
+    padding: 14px 0px 0px 0;
+    background: linear-gradient($secondary, $primary);
+    animation: disparition 3s linear;
+}
+
+@keyframes disparition{
+    0%{
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+}
+
+.loader{
+    font-family: "Shrikhand-Regular";
 }
 
 .lettre{
@@ -65,15 +81,11 @@
     animation-delay: 0.8s;
 }
 
-.fondu-out{
-    opacity: 0;
-    transition: opacity 0.4s ease-out;
-}
-
 .lds-dual-ring {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
   }
   .lds-dual-ring:after {
     content: " ";
@@ -82,24 +94,47 @@
     margin: 8px;
     border-radius: 50%;
     border: 6px solid #fff;
-    border-color: #fff transparent #fff transparent;
+    border-color: $tertiary transparent $tertiary transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }
-  @keyframes lds-dual-ring {
-    0% {
+  @keyframes lds-dual-ring{
+    0%{
       transform: rotate(0deg);
     }
-    100% {
+    100%{
       transform: rotate(360deg);
     }
   }
 
-.fa-heart{
-    transition: all 0.3s linear 0s;
-    height: 0;
-}
+/* Coeur animé */
 
 .fa-heart:hover{
-    color: rgb(0, 211, 165);
-    height: 100%;
+    background: linear-gradient($primary, $secondary);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all 0.3s linear 0s;
+    font-weight: 900;
+}
+
+/* Recette animée */
+
+.circlehere:hover{
+    animation: circlerotate 0.6s linear;
+}
+@keyframes circlerotate{
+    0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+}
+
+.circle{
+    display: none;
+}
+
+.recipe:hover .circle{
+    display: block;
 }

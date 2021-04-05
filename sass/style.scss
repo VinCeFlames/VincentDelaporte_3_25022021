@@ -79,8 +79,6 @@ section figure{
     padding-left: 12px;
 }
 
-
-
 section .item_new{
     font-size: 12px;
     font-weight: 600;
@@ -173,33 +171,49 @@ hr{
     padding: 0 10px 0 10px;
 }
 
+main .animation_recette{
+    display: flex;
+}
+
 main .recipe{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px 0 0 15px;
     width: 96%;
     margin: 15px 0 0 6px;
+}
+
+main .ingredients{
+    font-size: 13px;
+    margin: 0 0 0 0;
+    padding: 5px 0 12px 7px;
 }
 
 main .ingre_prize{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 0 12px 0;
-}
-
-main .ingredients{
-    font-size: 13px;
-    margin: 0 0 0 0;
-    padding: 5px 0 0 7px;
+    border-radius: 0 15px 15px 0;
+    margin: 15px 0 0 0;
+    padding: 0 0 26px 0;
+    height: 38px;
+    background-color: white;
 }
 
 main .prize{
     font-size: 13px;
     font-weight: 600;
     margin: 0 0 0 0;
-    padding: 0 15px 0 0;
+    padding: 36px 15px 0 0;
+}
+
+main .circle{
+    background: $tertiary;
+    margin: 13px 0 0 0;
+    padding: 24px 16px 24px 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main .fa-check-circle{
-    background: $tertiary;
+    
 }
