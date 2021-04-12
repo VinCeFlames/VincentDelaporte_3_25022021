@@ -1,6 +1,6 @@
 @import "./utils/mixins.scss";
 @import "./utils/variables.scss";
-@import "./animations/loader.scss";
+@import "./animations/animations.scss";
 @import "./components/buttons.scss";
 @import "./layout/footer.scss";
 @import "./layout/header.scss";
@@ -74,18 +74,29 @@ section a{
 }
 
 section figure{
+    position: relative;
     width: 280px;
-    margin: 0 0 0 0;
+    margin: 22px 0 0 0;
     padding-left: 12px;
 }
 
+section .restaurant_margin1{
+    margin: 0 0 16px 0;
+}
+
+section .restaurant_margin2{
+    margin: 38px 0 0 0;
+}
+
 section .item_new{
+    position: absolute;
+    top: 2%;
+    left: 70%;
     font-size: 12px;
     font-weight: 600;
     background: #99E2D0;
     color: #16a072;
     width: 18%;
-    margin: 0px 0 -40px 203px;
     padding: 5px 8px 5px 10px;
 }
 
@@ -212,4 +223,54 @@ main .circle{
     padding: 24px 16px 24px 16px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+
+section .index_img{
+    width: 106%;
+}
+
+section figcaption{
+    width: 106%;
+}
+
+section figure{
+    padding-left: 30px;
+}
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+
+section .index_img{
+    width: 300px;
+}
+
+section figcaption{
+    width: 300px; 
+}
+
+section figure{
+    padding-left: 54px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#section_title{
+    width: 100%;
+    padding-left: 306px;
+}
+
+section .restaurant_margin1{
+    margin: 38px 0 0 0;
+}
 }

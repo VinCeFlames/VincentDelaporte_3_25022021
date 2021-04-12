@@ -13,19 +13,11 @@
     animation: disparition 4s linear;
 }
 
-@keyframes disparition{
-    0%{
-        opacity: 1;
-    }
-    
-    100%{
-        opacity: 0;
-    }
-}
-
 .loader{
     font-family: "Shrikhand-Regular";
 }
+
+/* Animation texte loader */
 
 .lettre{
     color: $tertiary; 
@@ -81,6 +73,8 @@
     animation-delay: 0.8s;
 }
 
+/* Circle loader */
+
 .lds-dual-ring {
     display: flex;
     justify-content: center;
@@ -106,6 +100,20 @@
       transform: rotate(360deg);
     }
   }
+
+/* Disparition Loader */
+
+@keyframes disparition{
+0%{
+    opacity: 1;
+    visibility: visible;
+}
+
+100%{
+    opacity: 0;
+    visibility: hidden;
+}
+}
 
 /* Coeur animé */
 
@@ -143,10 +151,6 @@
 
 /* Fondu sur les blocks des recettes + décalage axe Y */
 
-.animation_recette{
-    
-}
-
 .anim1{
     animation: fadein 1s linear;
     animation-delay: 0.1s;  
@@ -169,10 +173,12 @@
 
 @keyframes fadein{
     0%{
+        transform: translateY(15px);
         opacity: 0;
     }
     
     100%{
+        transform: translateY(0);
         opacity: 1;
     }
 }

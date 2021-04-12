@@ -90,3 +90,116 @@ header .fa-arrow-left{
     padding: 0 0 14px 20px;
     text-align: center;
 }
+
+/* Responsive */
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+
+/* index.html */
+.header_logo1{
+    margin: 10px 104px;
+}
+
+.header_localization{
+    padding-left: 114px;
+}
+
+/* Les pages restaurants */
+header .back_logo{
+    margin-left: 20px;
+}
+
+.responsive_header_img{
+    margin-left: 28px;
+}
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    
+/* index.html */
+.header_logo1{
+    margin: 10px 120px;
+}
+
+.header_localization{
+    padding-left: 130px;
+}
+
+#header_top_title{
+    width: 78%;
+    padding: 35px 0 15px 50px;
+}
+
+/* Les pages restaurants */
+header .back_logo{
+    margin-left: 64px;
+}
+
+.responsive_header_img{
+    margin-left: 52px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+/* index.html */
+.header_logo1{
+    width: 214px;
+    margin: 10px 268px;
+}
+
+.header_localization .fa-map-marker-alt{
+    font-size: 17px; 
+}
+
+.header_localization p{
+    font-size: 16px;
+}
+
+.header_localization{
+    padding-left: 296px;
+}
+
+#header_top_title{
+    padding: 35px 0 15px 136px;
+}
+
+/* Les pages restaurants */
+header .back_logo{
+    margin-left: 236px;
+}
+
+.responsive_header_img{
+    margin-left: 220px;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+
+/* index.html */
+.header_logo1{
+    width: 300px;
+    margin: 10px 340px;
+}
+
+.header_localization .fa-map-marker-alt{
+    font-size: 28px;
+}
+
+.header_localization p{
+    font-size: 22px;
+}
+
+.header_localization{
+    padding-left: 380px;
+}
+
+#header_top_title {
+    font-size: 28px;
+    padding: 35px 0 15px 164px;
+}
+
+#header_bot_title{
+    font-size: 20px;
+}
+}

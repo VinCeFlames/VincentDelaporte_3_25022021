@@ -16,8 +16,7 @@ nav .item{
         &:hover{
         background: #ebe0ec;
         box-shadow: 10px 10px 10px 1px rgb(212, 212, 212);
-    }
-        
+    }  
 }
 
 nav .number{
@@ -31,34 +30,76 @@ nav .number{
     padding: 5px 2px 5px 10px;
 }
 
+nav .item:hover .item_ico1{
+    color:$primary;
+}
+
+nav .item:hover .item_ico2{
+    color:$primary;
+}
+
+nav .item:hover .item_ico3{
+    color:$primary;
+}
+
 nav .item_ico1{
     font-size: 18px;
     color: grey;
     margin: 0 22px 0 24px; 
-        &:hover{
-            color:$primary;
-        }
 }
 
 nav .item_ico2{
     font-size: 16px;
     color: grey;
     margin: 0 20px 0 22px; 
-    &:hover{
-        color:$primary;
-    }
 }
 
 nav .item_ico3{
     font-size: 14px;
     color: grey;
     margin: 0 20px 0 22px; 
-    &:hover{
-        color:$primary;
-    }
 }
 
 nav .choice{
     font-size: 14px;
     font-weight: 600;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+#nav_title{
+    font-size: 20px;
+    margin: 35px 0 20px 292px;
+}
+
+nav .item{
+    margin: 0 0 25px 148px;
+    padding: 6px 0 4px 82px;
+    width: 46%;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+
+#nav_title {
+    font-size: 24px;
+}
+
+nav .item_ico1 {
+    font-size: 22px;
+}
+
+nav .item_ico2 {
+    font-size: 20px;
+}
+
+nav .item_ico3 {
+    font-size: 18px;
+}
+
+nav .choice {
+    font-size: 20px;
+}
 }
