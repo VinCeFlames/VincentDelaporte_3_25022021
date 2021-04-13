@@ -118,9 +118,9 @@ section .index_sens{
 
 section .index_img{
     background-repeat: no-repeat;
-    background-size: 303px;
+    background-size: 100%;
     width: 100%;
-    height: 160px;
+    height: 147px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -230,11 +230,12 @@ main .circle{
 @media screen and (min-width: 375px) and (max-width: 424px){
 
 section .index_img{
-    width: 106%;
+    background-size: 100%;
+    width: 100%;
 }
 
 section figcaption{
-    width: 106%;
+    width: 100%;
 }
 
 section figure{
