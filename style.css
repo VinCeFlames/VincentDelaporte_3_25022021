@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /* Loader Spinner */
+.spinner_loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: -8px 0 0 -8px;
+  padding: 14px 0px 0px 0;
+  background: linear-gradient(#ff79da, #9356dc);
+  animation: disparition 6s linear;
+}
+
 .loader {
   font-family: "Shrikhand-Regular";
 }
@@ -116,7 +130,7 @@
   }
 }
 /* Recette coche animée */
-.circlehere:hover {
+main .animation_recette:hover .circlehere {
   animation: circlerotate 0.6s linear;
 }
 
@@ -134,6 +148,19 @@ main .animation_recette .circle {
 
 main .animation_recette:hover .circle {
   display: block;
+  animation: fadeleft 0.5s linear;
+}
+
+@keyframes fadeleft {
+  0% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+main .animation_recette:hover .ingre_prize {
+  border-radius: 0 0 0 0;
 }
 
 /* Fondu sur les blocks des recettes + décalage axe Y */
@@ -258,7 +285,6 @@ footer {
   color: white;
   width: 100%;
   height: 170px;
-  width: 100%;
 }
 
 .footer_all {
@@ -802,8 +828,8 @@ main .prize {
 
 main .circle {
   background: #99e2d0;
-  margin: 13px 0 0 0;
-  padding: 24px 16px 24px 16px;
+  margin: 15px 0 0 0;
+  padding: 24px 22px 22px 22px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
