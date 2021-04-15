@@ -758,6 +758,50 @@ section figcaption .fa-heart {
   color: #6e6e6e;
 }
 
+/* Responsive */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  section .index_img {
+    background-size: 100%;
+    width: 100%;
+  }
+
+  section figcaption {
+    width: 100%;
+  }
+
+  section figure {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  section .index_img {
+    width: 300px;
+  }
+
+  section figcaption {
+    width: 300px;
+  }
+
+  section figure {
+    padding-left: 54px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #section_title {
+    width: 100%;
+    padding-left: 306px;
+  }
+
+  section .restaurant_margin1 {
+    margin: 38px 0 0 0;
+  }
+}
 main {
   background: #f0f0f0;
   margin: -46px 0 0 0;
@@ -832,51 +876,6 @@ main .circle {
   padding: 24px 22px 22px 22px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-
-/* Responsive */
-@media screen and (min-width: 375px) and (max-width: 424px) {
-  section .index_img {
-    background-size: 100%;
-    width: 100%;
-  }
-
-  section figcaption {
-    width: 100%;
-  }
-
-  section figure {
-    padding-left: 30px;
-  }
-}
-@media screen and (min-width: 425px) and (max-width: 767px) {
-  section .index_img {
-    width: 300px;
-  }
-
-  section figcaption {
-    width: 300px;
-  }
-
-  section figure {
-    padding-left: 54px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  #section_title {
-    width: 100%;
-    padding-left: 306px;
-  }
-
-  section .restaurant_margin1 {
-    margin: 38px 0 0 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

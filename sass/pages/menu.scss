@@ -1,0 +1,75 @@
+main{
+    background: rgb(240, 240, 240);
+    margin: -46px 0 0 0;
+    padding-bottom: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+main .restaurant_name{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px 0 0 15px;
+}
+
+main .restaurant_name .fa-heart{
+    font-size: 22px;
+    padding: 0 34px 0 0;
+}
+
+main .container_title{
+    font-size: 14px;
+    margin: 14px 0 0 0;
+    padding: 20px 0 3px 15px;
+}
+
+hr{
+    border: $tertiary solid 2px;
+    width: 10px;
+    margin: 4px 0 0 15px;
+    padding: 0 10px 0 10px;
+}
+
+main .animation_recette{
+    display: flex;
+}
+
+main .recipe{
+    background-color: white;
+    border-radius: 15px 0 0 15px;
+    width: 96%;
+    margin: 15px 0 0 6px;
+}
+
+main .ingredients{
+    font-size: 13px;
+    margin: 0 0 0 0;
+    padding: 5px 0 12px 7px;
+}
+
+main .ingre_prize{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-radius: 0 15px 15px 0;
+    margin: 15px 0 0 0;
+    padding: 0 0 26px 0;
+    height: 38px;
+    background-color: white;
+}
+
+main .prize{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+    padding: 36px 15px 0 0;
+}
+
+main .circle{
+    background: $tertiary;
+    margin: 15px 0 0 0;
+    padding: 24px 22px 22px 22px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

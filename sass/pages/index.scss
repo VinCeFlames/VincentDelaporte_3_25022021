@@ -1,0 +1,189 @@
+@font-face{
+    font-family: "Roboto-Regular";
+    src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Roboto-Bold";
+    src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "Shrikhand-Regular";
+    src: url("/fonts/Shrikhand-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+body{
+    border-right: solid 1px rgb(172, 172, 172);
+}
+
+h1{
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    font-weight: 600;
+    margin: -4px 0 0 0;
+    padding: 15px 0 0 10px;
+}
+
+h2{
+    font-family: "Shrikhand-Regular";
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 0 0;
+}
+
+h3{
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    margin: 0 0 0 0;
+    padding: 12px 0 0 7px;
+}
+
+p{
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+}
+
+section{
+    background: rgb(240, 240, 240);
+    margin-top: 54px;
+    padding: 25px 0 36px 0;
+}
+
+#section_title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 40px 12px;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
+}
+
+section figure{
+    position: relative;
+    width: 280px;
+    margin: 22px 0 0 0;
+    padding-left: 12px;
+}
+
+section .restaurant_margin1{
+    margin: 0 0 16px 0;
+}
+
+section .restaurant_margin2{
+    margin: 38px 0 0 0;
+}
+
+section .item_new{
+    position: absolute;
+    top: 2%;
+    left: 70%;
+    font-size: 12px;
+    font-weight: 600;
+    background: #99E2D0;
+    color: #16a072;
+    width: 18%;
+    padding: 5px 8px 5px 10px;
+}
+
+section .index_gout{
+    background-image: url("images/restaurants/gout.jpg");
+}
+
+section .index_enchantee{
+    background-image: url("images/restaurants/enchantee.jpg");
+}
+
+section .index_french{
+    background-image: url("images/restaurants/french.jpg");
+}
+
+section .index_sens{
+    background-image: url("images/restaurants/sens.jpg");
+}
+
+section .index_img{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 147px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+section figcaption{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    box-shadow:  3px 3px 20px 1px rgb(214, 214, 214);
+    width: 100%;
+    height: 72px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -4px;
+}
+
+section figcaption p{
+    font-size: 14px;
+    margin: 0 0 0 0;
+    padding: 5px 0 0 10px;
+}
+
+section figcaption .fa-heart{
+    margin: 16px 30px 0 0;
+    font-size: 26px;
+    color: rgb(110, 110, 110);
+}
+
+/* Responsive */
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    section .index_img{
+        background-size: 100%;
+        width: 100%;
+    }
+    
+    section figcaption{
+        width: 100%;
+    }
+    
+    section figure{
+        padding-left: 30px;
+    }
+    }
+    
+    @media screen and (min-width: 425px) and (max-width: 767px){
+    section .index_img{
+        width: 300px;
+    }
+    
+    section figcaption{
+        width: 300px; 
+    }
+    
+    section figure{
+        padding-left: 54px;
+    }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #section_title{
+        width: 100%;
+        padding-left: 306px;
+    }
+    
+    section .restaurant_margin1{
+        margin: 38px 0 0 0;
+    }
+    }
