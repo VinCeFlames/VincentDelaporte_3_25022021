@@ -1,13 +1,14 @@
 /* Explorer nos restaurants */
 
 #header_button{
+    display: flex;
+    justify-content: center;
     background: linear-gradient($secondary, $primary);
     box-shadow:  5px 5px 10px 1px rgb(161, 161, 161);
     color: white;
     border-radius: 50px;
-    width: 54%;
+    width: 56%;
     padding: 12px 16px 12px 16px;
-    margin-left: 60px;
         &:hover{
             background: linear-gradient( #fd8bdd 20%, #9667cf 100%); 
             box-shadow:  10px 10px 10px 1px rgb(161, 161, 161);
@@ -31,14 +32,17 @@
 }
 
 /* Responsive */
+@media screen and (min-width: 346px) and (max-width: 374px){
+#header_button{
+    
+}
+}
 
-@media screen and (min-width: 375px) and (max-width: 424px){
+@media screen and (min-width: 375px) and (max-width: 404px){
 
 /* index.html */  
 #header_button{
-    width: 50%;
-    padding: 12px 0px 12px 16px;
-    margin-left: 86px;
+    
 }
 
 /* Les pages restaurants */
@@ -49,13 +53,11 @@
 }
 }
 
-@media screen and (min-width: 425px) and (max-width: 767px){
+@media screen and (min-width: 405px) and (max-width: 424px){
 
 /* index.html */  
 #header_button{
-    width: 46%;
-    padding: 12px 0px 12px 22px;
-    margin-left: 106px;
+    
 }
 
 /* Les pages restaurants */
@@ -65,32 +67,108 @@
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 425px) and (max-width: 450px){
 
+/* index.html */  
 #header_button{
-    width: 22%;
-    margin-left: 270px;
+    
+}
 }
 
+@media screen and (min-width: 451px) and (max-width: 600px){
+
+/* index.html */  
+#header_button{
+    
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px){
+
+/* index.html */  
+#header_button{
+    
+}
+
+/* Les pages restaurants */
 .order_button{
     width: 16%;
     margin: 50px 0 60px 282px;
 }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px){
+@media screen and (min-width: 701px) and (max-width: 767px){
 
 /* index.html */ 
 #header_button {
-    background: linear-gradient(#ff79da, #9356dc);
-    box-shadow: 5px 5px 10px 1px #a1a1a1;
-    color: white;
-    border-radius: 50px;
-    width: 24%;
-    padding: 16px 16px 16px 34px;
-    margin-left: 326px;
-    font-size: 20px;
+    
 }
 
 /* Les pages restaurants */
 }
+
+@media screen and (min-width: 768px) and (max-width: 840px){
+
+/* index.html */ 
+#header_button {
+    
+}
+}
+
+@media screen and (min-width: 841px) and (max-width: 941px){
+
+/* index.html */ 
+#header_button {
+     
+}
+}
+
+@media screen and (min-width: 942px) and (max-width: 1023px){
+
+/* index.html */ 
+#header_button {
+    
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1124px){
+
+/* index.html */ 
+#header_button {
+    
+}
+}
+
+@media screen and (min-width: 1125px) and (max-width: 1230px){
+
+/* index.html */ 
+#header_button {
+    
+}
+}
+    
+@media screen and (min-width: 1231px) and (max-width: 1331px){
+
+/* index.html */ 
+#header_button {
+     
+}
+}
+        
+
+@media screen and (min-width: 1332px) and (max-width: 1440px){
+
+/* index.html */ 
+#header_button {
+    
+}
+}
+
+@media screen and (min-width: 1332px) and (max-width: 1439px){
+
+/* index.html */ 
+#header_button {
+     
+}
+}
+    

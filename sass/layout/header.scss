@@ -1,5 +1,12 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header .back_logo{
     display: flex;
+    justify-content: center;
 }
 
 header .fa-arrow-left{
@@ -52,10 +59,11 @@ header .fa-arrow-left{
 
 .header_localization{
     display: flex;
+    justify-content: center;
     align-items: baseline;
+    width: 100%;
     background: rgb(230, 230, 230);
     border-top: solid 3px rgb(209, 209, 209);
-    padding-left: 80px;
         .fa-map-marker-alt{
             font-size: 15px;
             margin-right: 18px;
@@ -67,8 +75,18 @@ header .fa-arrow-left{
 }
 
 .header_top_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgb(240, 240, 240);
+    width: 100%;
     padding-bottom: 40px;
+}
+
+.header_bot_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header_bot_info p{
@@ -79,7 +97,7 @@ header .fa-arrow-left{
     font-size: 20px;
     font-weight: 700;
     width: 64%;
-    padding: 35px 0 15px 55px;
+    padding: 35px 0 15px 0;
     text-align: center;
 }
 
@@ -87,26 +105,25 @@ header .fa-arrow-left{
     color: rgb(119, 119, 119);
     font-weight: 500;
     width: 92%;
-    padding: 0 0 14px 20px;
+    padding: 0 0 14px 0;
     text-align: center;
 }
 
 /* Responsive */
 
+@media screen and (min-width: 332px) and (max-width: 374px){
+
+/* index.html */
+.header_logo1{
+    margin: 10px 90px;
+}
+}
+
 @media screen and (min-width: 375px) and (max-width: 424px){
 
 /* index.html */
 .header_logo1{
-    margin: 10px 104px;
-}
-
-.header_localization{
-    padding-left: 114px;
-}
-
-/* Les pages restaurants */
-header .back_logo{
-    margin-left: 20px;
+    margin: 10px 110px;
 }
 }
 
@@ -115,20 +132,12 @@ header .back_logo{
 /* index.html */
 .header_logo1{
     margin: 10px 120px;
-}
-
-.header_localization{
-    padding-left: 130px;
+    width: 200px;
 }
 
 #header_top_title{
-    width: 78%;
-    padding: 35px 0 15px 50px;
-}
-
-/* Les pages restaurants */
-header .back_logo{
-    margin-left: 64px;
+    width: 77%;
+    padding: 35px 0 15px 0;
 }
 }
 
@@ -148,17 +157,8 @@ header .back_logo{
     font-size: 16px;
 }
 
-.header_localization{
-    padding-left: 296px;
-}
-
 #header_top_title{
-    padding: 35px 0 15px 136px;
-}
-
-/* Les pages restaurants */
-header .back_logo{
-    margin-left: 236px;
+    padding: 35px 0 15px 0;
 }
 }
 
@@ -178,13 +178,9 @@ header .back_logo{
     font-size: 22px;
 }
 
-.header_localization{
-    padding-left: 380px;
-}
-
 #header_top_title {
     font-size: 28px;
-    padding: 35px 0 15px 164px;
+    padding: 35px 0 15px 0;
 }
 
 #header_bot_title{
