@@ -12,7 +12,7 @@
     margin: -8px 0 0 -8px;
     padding: 14px 0px 0px 0;
     background: linear-gradient($secondary, $primary);
-    animation: disparition 6s linear;
+    animation: disparition 8s linear;
     animation-fill-mode: both;
 }
 
@@ -110,10 +110,15 @@
 @keyframes disparition{
     0%{
         opacity: 1;
-       
     }
+
+    30%{
+        opacity: 0;
+    }
+
     100%{
         opacity: 0;
+        z-index: -1;
     }
 }
 
