@@ -18,13 +18,15 @@
 /* Commander */
 
 .order_button{
+    display: flex;
+    justify-content: center;
     background: linear-gradient($secondary, $primary);
     box-shadow:  5px 5px 10px 1px rgb(161, 161, 161);
     color: white;
     border-radius: 50px;
-    width: 40%;
-    padding: 12px 16px 12px 50px;
-    margin: 50px 0 60px 60px;
+    width: 36%;
+    padding: 12px 16px 12px 16px;
+    margin: 50px 0 60px 26%;
     &:hover{
         background: linear-gradient( #fd8bdd 20%, #9667cf 100%); 
         box-shadow:  10px 10px 10px 1px rgb(161, 161, 161);
@@ -32,143 +34,84 @@
 }
 
 /* Responsive */
-@media screen and (min-width: 346px) and (max-width: 374px){
+
+@media screen and (min-width: 426px) and (max-width: 640px){
+
 #header_button{
-    
+    width: 46%;
 }
 }
 
-@media screen and (min-width: 375px) and (max-width: 404px){
+@media screen and (min-width: 641px) and (max-width: 800px){
 
-/* index.html */  
+
 #header_button{
-    
-}
-
-/* Les pages restaurants */
-.order_button{
-    width: 34%;
-    padding: 12px 16px 12px 50px;
-    margin: 50px 0 60px 82px;
-}
-}
-
-@media screen and (min-width: 405px) and (max-width: 424px){
-
-/* index.html */  
-#header_button{
-    
-}
-
-/* Les pages restaurants */
-.order_button{
     width: 30%;
-    margin: 50px 0 60px 110px;
+}
+
+.order_button{
+    width: 28%;
+    margin-left: 32%;
 }
 }
 
-@media screen and (min-width: 425px) and (max-width: 450px){
+@media screen and (min-width: 801px) and (max-width: 1024px){
 
-/* index.html */  
 #header_button{
-    
+    width: 26%;
+}
+
+.order_button{
+    width: 26%;
+    margin-left: 34%;
 }
 }
 
-@media screen and (min-width: 451px) and (max-width: 600px){
-
-/* index.html */  
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+ 
 #header_button{
-    
+    width: 24%;
+}
+
+.order_button{
+    width: 20%;
+    margin-left: 38%;
 }
 }
 
-@media screen and (min-width: 601px) and (max-width: 700px){
-
-/* index.html */  
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+ 
 #header_button{
-    
+    width: 20%;
 }
 
-/* Les pages restaurants */
+.order_button{
+    width: 20%;
+    margin-left: 40%;
+}
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1641px){
+  
+#header_button{
+    width: 16%;
+}
+
 .order_button{
     width: 16%;
-    margin: 50px 0 60px 282px;
+    margin-left: 40%;
 }
 }
 
-@media screen and (min-width: 701px) and (max-width: 767px){
+@media screen and (min-width: 1642px) and (max-width: 1920px){
 
-/* index.html */ 
 #header_button {
-    
+    width: 12%;
 }
 
-/* Les pages restaurants */
-}
-
-@media screen and (min-width: 768px) and (max-width: 840px){
-
-/* index.html */ 
-#header_button {
-    
-}
-}
-
-@media screen and (min-width: 841px) and (max-width: 941px){
-
-/* index.html */ 
-#header_button {
-     
-}
-}
-
-@media screen and (min-width: 942px) and (max-width: 1023px){
-
-/* index.html */ 
-#header_button {
-    
-}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1124px){
-
-/* index.html */ 
-#header_button {
-    
-}
-}
-
-@media screen and (min-width: 1125px) and (max-width: 1230px){
-
-/* index.html */ 
-#header_button {
-    
-}
-}
-    
-@media screen and (min-width: 1231px) and (max-width: 1331px){
-
-/* index.html */ 
-#header_button {
-     
-}
-}
-        
-
-@media screen and (min-width: 1332px) and (max-width: 1440px){
-
-/* index.html */ 
-#header_button {
-    
-}
-}
-
-@media screen and (min-width: 1332px) and (max-width: 1439px){
-
-/* index.html */ 
-#header_button {
-     
+.order_button{
+    width: 16%;
+    margin-left: 40%;
 }
 }
     

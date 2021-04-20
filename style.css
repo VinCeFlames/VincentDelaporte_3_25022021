@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  animation-fill-mode: both;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -14,6 +13,7 @@
   padding: 14px 0px 0px 0;
   background: linear-gradient(#ff79da, #9356dc);
   animation: disparition 6s linear;
+  animation-fill-mode: both;
 }
 
 .loader {
@@ -130,6 +130,10 @@
   }
 }
 /* Recette coche animée */
+main .animation_recette:hover .ingredients {
+  text-overflow: ellipsis;
+}
+
 main .animation_recette:hover .circlehere {
   animation: circlerotate 0.3s linear;
 }
@@ -208,13 +212,15 @@ main .animation_recette:hover .ingre_prize {
 
 /* Commander */
 .order_button {
+  display: flex;
+  justify-content: center;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 5px 5px 10px 1px #a1a1a1;
   color: white;
   border-radius: 50px;
-  width: 40%;
-  padding: 12px 16px 12px 50px;
-  margin: 50px 0 60px 60px;
+  width: 36%;
+  padding: 12px 16px 12px 16px;
+  margin: 50px 0 60px 26%;
 }
 .order_button:hover {
   background: linear-gradient(#fd8bdd 20%, #9667cf 100%);
@@ -222,66 +228,75 @@ main .animation_recette:hover .ingre_prize {
 }
 
 /* Responsive */
-@media screen and (min-width: 375px) and (max-width: 404px) {
-  /* index.html */
-  /* Les pages restaurants */
-  .order_button {
-    width: 34%;
-    padding: 12px 16px 12px 50px;
-    margin: 50px 0 60px 82px;
+@media screen and (min-width: 426px) and (max-width: 640px) {
+  #header_button {
+    width: 46%;
   }
 }
-@media screen and (min-width: 405px) and (max-width: 424px) {
-  /* index.html */
-  /* Les pages restaurants */
-  .order_button {
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  #header_button {
     width: 30%;
-    margin: 50px 0 60px 110px;
+  }
+
+  .order_button {
+    width: 28%;
+    margin-left: 32%;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 450px) {
-  /* index.html */
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  #header_button {
+    width: 26%;
+  }
+
+  .order_button {
+    width: 26%;
+    margin-left: 34%;
+  }
 }
-@media screen and (min-width: 451px) and (max-width: 600px) {
-  /* index.html */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #header_button {
+    width: 24%;
+  }
+
+  .order_button {
+    width: 20%;
+    margin-left: 38%;
+  }
 }
-@media screen and (min-width: 601px) and (max-width: 700px) {
-  /* index.html */
-  /* Les pages restaurants */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  #header_button {
+    width: 20%;
+  }
+
+  .order_button {
+    width: 20%;
+    margin-left: 40%;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1641px) {
+  #header_button {
+    width: 16%;
+  }
+
   .order_button {
     width: 16%;
-    margin: 50px 0 60px 282px;
+    margin-left: 40%;
   }
 }
-@media screen and (min-width: 701px) and (max-width: 767px) {
-  /* index.html */
-  /* Les pages restaurants */
-}
-@media screen and (min-width: 768px) and (max-width: 840px) {
-  /* index.html */
-}
-@media screen and (min-width: 841px) and (max-width: 941px) {
-  /* index.html */
-}
-@media screen and (min-width: 942px) and (max-width: 1023px) {
-  /* index.html */
-}
-@media screen and (min-width: 1024px) and (max-width: 1124px) {
-  /* index.html */
-}
-@media screen and (min-width: 1125px) and (max-width: 1230px) {
-  /* index.html */
-}
-@media screen and (min-width: 1231px) and (max-width: 1331px) {
-  /* index.html */
-}
-@media screen and (min-width: 1332px) and (max-width: 1440px) {
-  /* index.html */
-}
-@media screen and (min-width: 1332px) and (max-width: 1439px) {
-  /* index.html */
+@media screen and (min-width: 1642px) and (max-width: 1920px) {
+  #header_button {
+    width: 12%;
+  }
+
+  .order_button {
+    width: 16%;
+    margin-left: 40%;
+  }
 }
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #333333;
   color: white;
   width: 100%;
@@ -294,7 +309,7 @@ footer {
 
 #footer_logo {
   width: 100px;
-  margin: 18px 0 18px 20px;
+  margin: 18px 0 18px 0;
 }
 
 .footer_ico {
@@ -324,15 +339,68 @@ footer a {
 }
 
 /* Responsive */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  #footer_logo {
-    margin: 18px 0 18px 328px;
+@media screen and (min-width: 600px) and (max-width: 940px) {
+  footer {
+    align-items: unset;
   }
 
   .footer_all {
     display: flex;
     justify-content: space-around;
     padding: 46px 10px 0 0px;
+  }
+
+  #footer_logo {
+    width: 115px;
+    margin: 18px 0 18px 40%;
+  }
+}
+@media screen and (min-width: 941px) and (max-width: 1330px) {
+  footer {
+    align-items: unset;
+  }
+
+  .footer_all {
+    display: flex;
+    justify-content: space-around;
+    padding: 46px 10px 0 0px;
+  }
+
+  #footer_logo {
+    width: 136px;
+    margin: 18px 0 18px 43%;
+  }
+}
+@media screen and (min-width: 1331px) and (max-width: 1440px) {
+  footer {
+    align-items: unset;
+  }
+
+  .footer_all {
+    display: flex;
+    justify-content: space-around;
+    padding: 46px 10px 0 0px;
+  }
+
+  #footer_logo {
+    width: 155px;
+    margin: 18px 0 18px 45%;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  footer {
+    align-items: unset;
+  }
+
+  .footer_all {
+    display: flex;
+    justify-content: space-around;
+    padding: 46px 10px 0 0px;
+  }
+
+  #footer_logo {
+    width: 155px;
+    margin: 18px 0 18px 45%;
   }
 }
 .header_index {
@@ -462,7 +530,7 @@ header .fa-arrow-left {
   /* index.html */
   .header_logo1 {
     margin: 10px 120px;
-    width: 200px;
+    width: 170px;
   }
 
   #header_top_title {
@@ -473,7 +541,7 @@ header .fa-arrow-left {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* index.html */
   .header_logo1 {
-    width: 214px;
+    width: 180px;
     margin: 10px 268px;
   }
 
@@ -486,31 +554,63 @@ header .fa-arrow-left {
   }
 
   #header_top_title {
+    width: 100%;
     padding: 35px 0 15px 0;
+  }
+
+  #header_bot_title {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   /* index.html */
   .header_logo1 {
-    width: 300px;
+    width: 200px;
     margin: 10px 340px;
   }
 
   .header_localization .fa-map-marker-alt {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .header_localization p {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   #header_top_title {
-    font-size: 28px;
+    width: 100%;
+    font-size: 18px;
     padding: 35px 0 15px 0;
   }
 
   #header_bot_title {
-    font-size: 20px;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .header_logo1 {
+    width: 210px;
+    margin: 10px 340px;
+  }
+
+  .header_localization .fa-map-marker-alt {
+    font-size: 18px;
+  }
+
+  .header_localization p {
+    font-size: 18px;
+  }
+
+  #header_top_title {
+    width: 100%;
+    font-size: 18px;
+    padding: 35px 0 15px 0;
+  }
+
+  #header_bot_title {
+    width: 100%;
+    font-size: 18px;
   }
 }
 nav {
@@ -588,51 +688,45 @@ nav .choice {
 
 /* Responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  #nav_title {
-    font-size: 20px;
-    margin: 35px 0 20px 0;
-  }
-
   nav .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 0 25px 0;
-    padding: 6px 0 4px 82px;
     width: 46%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  #nav_title {
-    font-size: 24px;
+  nav .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 25px 0;
+    width: 46%;
   }
-
-  nav .item_ico1 {
-    font-size: 22px;
-  }
-
-  nav .item_ico2 {
-    font-size: 20px;
-  }
-
-  nav .item_ico3 {
-    font-size: 18px;
-  }
-
-  nav .choice {
-    font-size: 20px;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  nav .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 25px 0;
+    width: 32%;
   }
 }
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("./fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: "Shrikhand-Regular";
-  src: url("/fonts/Shrikhand-Regular.ttf") format("truetype");
+  src: url("./fonts/Shrikhand-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 body {
@@ -693,7 +787,7 @@ section figure {
 }
 
 section .restaurant_margin1 {
-  margin: 0 0 16px 0;
+  margin: 0 0 0 0;
 }
 
 section .restaurant_margin2 {
@@ -701,6 +795,8 @@ section .restaurant_margin2 {
 }
 
 section .item_new {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 2%;
   left: 70%;
@@ -709,7 +805,7 @@ section .item_new {
   background: #99E2D0;
   color: #16a072;
   width: 18%;
-  padding: 5px 8px 5px 10px;
+  padding: 5px 8px 5px 8px;
 }
 
 section .index_gout {
@@ -762,26 +858,12 @@ section figcaption .fa-heart {
 }
 
 /* Responsive */
-@media screen and (min-width: 375px) and (max-width: 424px) {
-  section .index_img {
-    background-size: 100%;
-    width: 100%;
-  }
-
-  section figcaption {
-    width: 100%;
+@media screen and (min-width: 490px) and (max-width: 655px) {
+  section figure {
+    width: 428px;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 767px) {
-  section .index_img {
-    width: 300px;
-  }
-
-  section figcaption {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 656px) and (max-width: 856px) {
   section {
     display: flex;
     justify-content: space-evenly;
@@ -790,12 +872,101 @@ section figcaption .fa-heart {
   }
 
   #section_title {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding-left: 306px;
   }
 
-  section .restaurant_margin1 {
-    margin: 38px 0 0 0;
+  section .restaurant_margin2 {
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 857px) and (max-width: 1024px) {
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #section_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section figure {
+    width: 360px;
+  }
+
+  section .restaurant_margin2 {
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1330px) {
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #section_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section figure {
+    width: 438px;
+  }
+
+  section .restaurant_margin2 {
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 1331px) and (max-width: 1640px) {
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #section_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section figure {
+    width: 585px;
+  }
+
+  section .restaurant_margin2 {
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 1641px) and (max-width: 1920px) {
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #section_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section figure {
+    width: 635px;
+  }
+
+  section .restaurant_margin2 {
+    margin: 0 0 0 0;
   }
 }
 main {

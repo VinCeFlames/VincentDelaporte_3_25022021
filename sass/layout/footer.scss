@@ -1,4 +1,7 @@
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgb(51, 51, 51);
     color: white;
     width: 100%;
@@ -11,8 +14,7 @@ footer{
 
 #footer_logo{
     width: 100px;
-    margin: 18px 0 18px 20px;
-    
+    margin: 18px 0 18px 0;  
 }
 
 .footer_ico{
@@ -43,10 +45,9 @@ footer a{
 
 /* Responsive */
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-#footer_logo{
-    margin: 18px 0 18px 328px;
+@media screen and (min-width: 600px) and (max-width: 940px){
+footer{
+    align-items: unset;
 }
 
 .footer_all {
@@ -55,4 +56,62 @@ footer a{
     padding: 46px 10px 0 0px;
 }
 
+#footer_logo{
+    width: 115px;
+    margin: 18px 0 18px 40%;
+}
+}
+
+@media screen and (min-width: 941px) and (max-width: 1330px){
+footer{
+    align-items: unset;
+}
+
+.footer_all {
+    display: flex;
+    justify-content: space-around;
+    padding: 46px 10px 0 0px;
+}
+
+
+#footer_logo{
+    width: 136px;
+    margin: 18px 0 18px 43%;
+}
+}
+
+@media screen and (min-width: 1331px) and (max-width: 1440px){
+footer{
+    align-items: unset;
+}
+
+.footer_all {
+    display: flex;
+    justify-content: space-around;
+    padding: 46px 10px 0 0px;
+}
+
+
+#footer_logo{
+    width: 155px;
+    margin: 18px 0 18px 45%;
+}
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px){
+footer{
+    align-items: unset;
+}
+
+.footer_all {
+    display: flex;
+    justify-content: space-around;
+    padding: 46px 10px 0 0px;
+}
+
+
+#footer_logo{
+    width: 155px;
+    margin: 18px 0 18px 45%;
+}
 }
