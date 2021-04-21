@@ -122,7 +122,7 @@
   -webkit-background-clip: text;
   transition: all 0.3s linear 0s;
   font-weight: 900;
-  animation: remplissage 1.5s linear;
+  animation: remplissage 1.8s linear;
 }
 
 @keyframes remplissage {
@@ -134,7 +134,7 @@
   }
 }
 /* Recette coche animée */
-main .animation_recette:hover .ingredients {
+main .animation_recette:hover .recipe {
   text-overflow: ellipsis;
 }
 
@@ -150,19 +150,18 @@ main .animation_recette:hover .circlehere {
     transform: rotate(360deg);
   }
 }
-main .animation_recette:hover .circle {
-  width: 80px;
-  animation: decalage 0.2s linear;
+main .animation_recette .circle {
+  width: 0px;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
 }
 
-@keyframes decalage {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80px;
-  }
+main .animation_recette:hover .circle {
+  width: 80px;
+  transition: 0.3s;
+  transition-timing-function: ease-in;
 }
+
 main .animation_recette:hover .ingre_prize {
   border-radius: 0 0 0 0;
 }
