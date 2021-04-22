@@ -129,18 +129,8 @@
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-    transition: all 0.3s linear 0s;
+    transition: all 0.8s linear;
     font-weight: 900;
-    animation: remplissage 1.8s linear;
-}
-
-@keyframes remplissage{
-    0%{
-            height: 0%;
-    }
-    100%{
-            height: 100%;
-    }
 }
 
 /* Recette coche animée */

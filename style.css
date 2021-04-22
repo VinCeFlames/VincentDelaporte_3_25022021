@@ -120,19 +120,10 @@
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  transition: all 0.3s linear 0s;
+  transition: all 0.8s linear;
   font-weight: 900;
-  animation: remplissage 1.8s linear;
 }
 
-@keyframes remplissage {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 100%;
-  }
-}
 /* Recette coche animée */
 main .animation_recette:hover .circlehere {
   animation: circlerotate 0.3s linear;
@@ -854,9 +845,8 @@ section figcaption p {
 }
 
 section figcaption .fa-heart {
-  margin: 16px 30px 0 0;
   font-size: 26px;
-  color: #6e6e6e;
+  margin: 16px 30px 0 0;
 }
 
 /* Responsive */
@@ -987,7 +977,7 @@ main .restaurant_name {
 }
 
 main .restaurant_name .fa-heart {
-  font-size: 22px;
+  font-size: 26px;
   padding: 0 34px 0 0;
 }
 
