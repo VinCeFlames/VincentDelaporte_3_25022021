@@ -145,10 +145,6 @@
 
 /* Recette coche animée */
 
-main .animation_recette:hover .recipe{
-    text-overflow: ellipsis;
-}
-
 main .animation_recette:hover .circlehere{
     animation: circlerotate 0.3s linear;
 }

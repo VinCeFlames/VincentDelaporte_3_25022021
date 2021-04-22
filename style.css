@@ -134,10 +134,6 @@
   }
 }
 /* Recette coche animée */
-main .animation_recette:hover .recipe {
-  text-overflow: ellipsis;
-}
-
 main .animation_recette:hover .circlehere {
   animation: circlerotate 0.3s linear;
 }
@@ -757,6 +753,8 @@ h3 {
   font-size: 15px;
   margin: 0 0 0 0;
   padding: 12px 0 0 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 p {
@@ -1015,12 +1013,17 @@ main .recipe {
   border-radius: 15px 0 0 15px;
   width: 96%;
   margin: 15px 0 0 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 main .ingredients {
   font-size: 13px;
   margin: 0 0 0 0;
   padding: 5px 0 12px 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 main .ingre_prize {
@@ -1038,7 +1041,7 @@ main .prize {
   font-size: 13px;
   font-weight: 600;
   margin: 0 0 0 0;
-  padding: 36px 15px 0 0;
+  padding: 36px 15px 0 8px;
 }
 
 main .circle {
